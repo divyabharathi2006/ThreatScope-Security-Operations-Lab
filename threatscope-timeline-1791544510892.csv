@@ -1,0 +1,2 @@
+timestamp,eventId,category,type,source,ioc,severity,status,analystAction,notes
+2025-01-17T12:00:00.000Z,EVT-2417,Malware,IPv4,Imported sample,host-17.example.test,High,Open,,

@@ -1,0 +1,80 @@
+{
+  "reportId": "RPT-1791544509283",
+  "generatedAt": "2026-10-09T11:15:09.283Z",
+  "analyst": "QA-Blue",
+  "iocDetails": [],
+  "riskScoreSummary": {
+    "eventCount": 4,
+    "critical": 0,
+    "high": 4
+  },
+  "investigationHistory": [],
+  "relatedEvents": [
+    {
+      "id": "EVT-2402",
+      "timestamp": "2025-01-02T12:00:00.000Z",
+      "category": "Malware",
+      "iocType": "IPv4",
+      "ioc": "host-2.example.test",
+      "description": "Fixture event description 2",
+      "sourceType": "Imported sample",
+      "severity": "High",
+      "status": "Investigating",
+      "analystAction": "Marked investigated locally",
+      "notes": "",
+      "isAlert": false
+    },
+    {
+      "id": "EVT-2407",
+      "timestamp": "2025-01-07T12:00:00.000Z",
+      "category": "Phishing",
+      "iocType": "Domain",
+      "ioc": "host-7.example.test",
+      "description": "Fixture event description 7",
+      "sourceType": "Local feed",
+      "severity": "High",
+      "status": "Investigating",
+      "analystAction": "Marked investigated locally",
+      "notes": "",
+      "isAlert": true
+    },
+    {
+      "id": "EVT-2412",
+      "timestamp": "2025-01-12T12:00:00.000Z",
+      "category": "Credential Abuse",
+      "iocType": "URL",
+      "ioc": "host-12.example.test",
+      "description": "Fixture event description 12",
+      "sourceType": "Analyst entry",
+      "severity": "High",
+      "status": "Open",
+      "analystAction": "",
+      "notes": "",
+      "isAlert": false
+    },
+    {
+      "id": "EVT-2417",
+      "timestamp": "2025-01-17T12:00:00.000Z",
+      "category": "Malware",
+      "iocType": "IPv4",
+      "ioc": "host-17.example.test",
+      "description": "Fixture event description 17",
+      "sourceType": "Imported sample",
+      "severity": "High",
+      "status": "Open",
+      "analystAction": "",
+      "notes": "",
+      "isAlert": false
+    }
+  ],
+  "scope": "Filtered events (4)",
+  "appliedFilters": {
+    "search": "",
+    "severity": "high",
+    "type": "all",
+    "from": "",
+    "to": ""
+  },
+  "dataSource": "Browser-local saved records; no live source connection",
+  "confidence": "Local record confidence only. External threat intelligence is not queried or independently verified."
+}

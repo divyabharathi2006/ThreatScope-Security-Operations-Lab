@@ -1,0 +1,42 @@
+@media (max-width: 720px) {
+  .view-container {
+    padding: 1rem;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    padding: 0.9rem 1rem;
+  }
+
+  .global-search-wrap {
+    min-width: 100%;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topbar-left,
+  .topbar-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .kpi-grid,
+  .stats-grid,
+  .card-grid,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-link {
+    min-height: 52px;
+    font-size: 0.9rem;
+  }
+}

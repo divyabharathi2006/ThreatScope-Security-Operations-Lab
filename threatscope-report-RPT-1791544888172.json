@@ -1,0 +1,166 @@
+{
+  "reportId": "RPT-1791544888172",
+  "generatedAt": "2026-10-09T11:21:28.172Z",
+  "analyst": "Analyst-01",
+  "iocDetails": [
+    {
+      "id": "IOC-HOSTILE",
+      "type": "URL",
+      "value": "<img id=\"xss-ioc\" src=x onerror=\"document.documentElement.dataset.xss='ioc'\">",
+      "classification": "Suspicious",
+      "riskScore": 88,
+      "createdAt": "2026-10-09T11:20:35.602Z",
+      "lastChecked": "2026-10-09T11:20:35.602Z",
+      "tags": [
+        "test"
+      ],
+      "notes": "IOC <img id=\"xss-ioc-notes\" src=x onerror=\"document.documentElement.dataset.xss='ioc-notes'\">",
+      "watchlist": true,
+      "history": [],
+      "related": [
+        "TEST-001"
+      ]
+    },
+    {
+      "id": "IOC-PLAIN",
+      "type": "Domain",
+      "value": "safe-test.example",
+      "classification": "Unknown",
+      "riskScore": 20,
+      "watchlist": false,
+      "related": [
+        "TEST-002"
+      ]
+    }
+  ],
+  "riskScoreSummary": {
+    "eventCount": 8,
+    "critical": 2,
+    "high": 2
+  },
+  "investigationHistory": [],
+  "relatedEvents": [
+    {
+      "id": "TEST-010",
+      "timestamp": "2026-10-09T04:57:00.000Z",
+      "category": "Malware",
+      "iocType": "IPv4",
+      "ioc": "198.51.100.9",
+      "sourceType": "Email Gateway",
+      "severity": "Informational",
+      "status": "Investigating",
+      "isAlert": true,
+      "description": "Synthetic test event 10",
+      "analystAction": "Marked investigated locally",
+      "notes": ""
+    },
+    {
+      "id": "TEST-001",
+      "timestamp": "2026-10-09T03:30:00.000Z",
+      "category": "Phishing",
+      "iocType": "URL",
+      "ioc": "<img id=\"xss-ioc-event\" src=x onerror=\"document.documentElement.dataset.xss='ioc-event'\">",
+      "sourceType": "Email Gateway",
+      "severity": "Critical",
+      "status": "Investigating",
+      "isAlert": true,
+      "description": "Review <img id=\"xss-description\" src=x onerror=\"document.documentElement.dataset.xss='description'\">",
+      "analystAction": "Marked investigated locally",
+      "notes": "Persisted validation note <img id=\"xss-notes-edited\" src=x onerror=\"document.documentElement.dataset.xss='edited-notes'\">"
+    },
+    {
+      "id": "TEST-011",
+      "timestamp": "2026-10-08T06:00:00.000Z",
+      "category": "Credential Access",
+      "iocType": "Domain",
+      "ioc": "indicator-10.example",
+      "sourceType": "EDR",
+      "severity": "Critical",
+      "status": "Investigating",
+      "isAlert": false,
+      "description": "Synthetic test event 11",
+      "analystAction": "Marked investigated locally",
+      "notes": ""
+    },
+    {
+      "id": "TEST-002",
+      "timestamp": "2026-10-08T04:33:00.000Z",
+      "category": "Malware",
+      "iocType": "IPv4",
+      "ioc": "198.51.100.1",
+      "sourceType": "EDR",
+      "severity": "High",
+      "status": "Open",
+      "isAlert": false,
+      "description": "Synthetic test event 2",
+      "analystAction": "Reopened locally",
+      "notes": ""
+    },
+    {
+      "id": "TEST-012",
+      "timestamp": "2026-10-07T07:03:00.000Z",
+      "category": "Network Anomaly",
+      "iocType": "SHA-256",
+      "ioc": "indicator-11.example",
+      "sourceType": "Firewall",
+      "severity": "High",
+      "status": "Investigating",
+      "isAlert": false,
+      "description": "Synthetic test event 12",
+      "analystAction": "Marked investigated locally",
+      "notes": ""
+    },
+    {
+      "id": "TEST-003",
+      "timestamp": "2026-10-07T05:36:00.000Z",
+      "category": "Credential Access",
+      "iocType": "Domain",
+      "ioc": "indicator-2.example",
+      "sourceType": "Firewall",
+      "severity": "Medium",
+      "status": "Investigating",
+      "isAlert": false,
+      "description": "Synthetic test event 3",
+      "analystAction": "Marked investigated locally",
+      "notes": ""
+    },
+    {
+      "id": "TEST-004",
+      "timestamp": "2026-10-06T06:39:00.000Z",
+      "category": "Network Anomaly",
+      "iocType": "SHA-256",
+      "ioc": "indicator-3.example",
+      "sourceType": "Email Gateway",
+      "severity": "Low",
+      "status": "Investigating",
+      "isAlert": true,
+      "description": "Synthetic test event 4",
+      "analystAction": "Marked investigated locally",
+      "notes": ""
+    },
+    {
+      "id": "TEST-005",
+      "timestamp": "2026-10-05T07:42:00.000Z",
+      "category": "Phishing",
+      "iocType": "URL",
+      "ioc": "indicator-4.example",
+      "sourceType": "EDR",
+      "severity": "Informational",
+      "status": "Investigating",
+      "isAlert": false,
+      "description": "Synthetic test event 5",
+      "analystAction": "Marked investigated locally",
+      "notes": ""
+    }
+  ],
+  "scope": "Selected events (8)",
+  "appliedFilters": {
+    "search": "",
+    "severity": "all",
+    "type": "all",
+    "from": "",
+    "to": ""
+  },
+  "dataSource": "Browser-local saved records; no live source connection",
+  "confidence": "Local record confidence only. External threat intelligence is not queried or independently verified."
+}

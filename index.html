@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ThreatScope is a browser-based SOC dashboard for investigating suspicious URLs, IOCs, alerts, and cyberattack scenarios."
+    />
+    <title>ThreatScope | SOC Lab</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand-block">
+          <div class="brand-mark">TS</div>
+          <div>
+            <h1>ThreatScope</h1>
+            <small>Security Operations Lab</small>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Primary navigation">
+          <button class="nav-link active" data-view="overview">Overview Dashboard</button>
+          <button class="nav-link" data-view="inspector">URL and Domain Inspector</button>
+          <button class="nav-link" data-view="ioc-analyzer">IOC Analyzer</button>
+          <button class="nav-link" data-view="timeline">Threat Event Timeline</button>
+          <button class="nav-link" data-view="event-log">Security Event Explorer</button>
+          <button class="nav-link" data-view="simulation">Attack Simulation Lab</button>
+          <button class="nav-link" data-view="sources">Threat Intelligence Sources</button>
+          <button class="nav-link" data-view="reports">Investigation Reports</button>
+          <button class="nav-link" data-view="watchlist">Watchlist</button>
+          <button class="nav-link" data-view="settings">Settings and Data Management</button>
+          <button class="nav-link" data-view="help">Help and Analyst Guide</button>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button id="sidebarToggle" class="icon-button" aria-label="Toggle sidebar">☰</button>
+            <div class="global-search-wrap">
+              <span class="search-icon">⌕</span>
+              <input id="globalSearch" type="search" placeholder="Search indicators, alerts, or events" aria-label="Global search" />
+            </div>
+          </div>
+
+          <div class="topbar-actions">
+            <button class="icon-button" id="notificationsButton" aria-label="Open local event notifications" aria-controls="notificationPanel" aria-expanded="false">🔔 <span class="badge" hidden>0</span></button>
+            <button class="icon-button" id="themeToggle" aria-label="Toggle theme">☼</button>
+            <div class="status-chip">
+              <span class="status-dot"></span>
+              <span>Browser-only mode</span>
+            </div>
+          </div>
+        </header>
+
+        <div id="viewContainer" class="view-container" aria-live="polite"></div>
+      </main>
+    </div>
+
+    <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+    <div id="modalRoot" class="modal-root"></div>
+
+    <script src="js/validation.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/risk-engine.js"></script>
+    <script src="js/threat-sources.js"></script>
+    <script src="js/url-inspector.js"></script>
+    <script src="js/event-manager.js"></script>
+    <script src="js/ioc-analyzer.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/simulation-lab.js"></script>
+    <script src="js/report-export.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

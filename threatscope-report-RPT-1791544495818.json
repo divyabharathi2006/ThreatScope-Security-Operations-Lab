@@ -1,0 +1,52 @@
+{
+  "reportId": "RPT-1791544495818",
+  "generatedAt": "2026-10-09T11:14:55.818Z",
+  "analyst": "QA-Blue",
+  "iocDetails": [],
+  "riskScoreSummary": {
+    "eventCount": 2,
+    "critical": 1,
+    "high": 1
+  },
+  "investigationHistory": [],
+  "relatedEvents": [
+    {
+      "id": "EVT-2401",
+      "timestamp": "2025-01-01T12:00:00.000Z",
+      "category": "Phishing",
+      "iocType": "Domain",
+      "ioc": "<img id=\"fixture-xss\" src=x onerror=\"document.documentElement.dataset.xss='executed'\">",
+      "description": "Literal <img id=\"fixture-xss\" src=x onerror=\"document.documentElement.dataset.xss='executed'\"> payload",
+      "sourceType": "Local feed",
+      "severity": "Critical",
+      "status": "Investigating",
+      "analystAction": "Marked investigated locally",
+      "notes": "",
+      "isAlert": false
+    },
+    {
+      "id": "EVT-2402",
+      "timestamp": "2025-01-02T12:00:00.000Z",
+      "category": "Malware",
+      "iocType": "IPv4",
+      "ioc": "host-2.example.test",
+      "description": "Fixture event description 2",
+      "sourceType": "Imported sample",
+      "severity": "High",
+      "status": "Investigating",
+      "analystAction": "Marked investigated locally",
+      "notes": "",
+      "isAlert": false
+    }
+  ],
+  "scope": "Selected events (2)",
+  "appliedFilters": {
+    "search": "",
+    "severity": "all",
+    "type": "all",
+    "from": "",
+    "to": ""
+  },
+  "dataSource": "Browser-local saved records; no live source connection",
+  "confidence": "Local record confidence only. External threat intelligence is not queried or independently verified."
+}

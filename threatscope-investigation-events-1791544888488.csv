@@ -1,0 +1,9 @@
+timestamp,eventId,category,type,source,ioc,severity,status,analystAction,notes
+2026-10-09T04:57:00.000Z,TEST-010,Malware,IPv4,Email Gateway,198.51.100.9,Informational,Investigating,Marked investigated locally,
+2026-10-09T03:30:00.000Z,TEST-001,Phishing,URL,Email Gateway,"<img id=""xss-ioc-event"" src=x onerror=""document.documentElement.dataset.xss='ioc-event'"">",Critical,Investigating,Marked investigated locally,"Persisted validation note <img id=""xss-notes-edited"" src=x onerror=""document.documentElement.dataset.xss='edited-notes'"">"
+2026-10-08T06:00:00.000Z,TEST-011,Credential Access,Domain,EDR,indicator-10.example,Critical,Investigating,Marked investigated locally,
+2026-10-08T04:33:00.000Z,TEST-002,Malware,IPv4,EDR,198.51.100.1,High,Open,Reopened locally,
+2026-10-07T07:03:00.000Z,TEST-012,Network Anomaly,SHA-256,Firewall,indicator-11.example,High,Investigating,Marked investigated locally,
+2026-10-07T05:36:00.000Z,TEST-003,Credential Access,Domain,Firewall,indicator-2.example,Medium,Investigating,Marked investigated locally,
+2026-10-06T06:39:00.000Z,TEST-004,Network Anomaly,SHA-256,Email Gateway,indicator-3.example,Low,Investigating,Marked investigated locally,
+2026-10-05T07:42:00.000Z,TEST-005,Phishing,URL,EDR,indicator-4.example,Informational,Investigating,Marked investigated locally,
